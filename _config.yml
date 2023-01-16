@@ -18,20 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Msanii paper demo
+email: kinyugomaina@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is the demo website for the paper:
+  "Msanii: High Fidelity Music Synthesis on a Shoestring Budget".
 domain: kinyugo.github.io
 baseurl: "/msanii-demo" # the subpath of your site, e.g. /blog
 url: "https://kinyugo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mkinyugo
 github_username: Kinyugo
+paper_title: "Msanii: High Fidelity Music Synthesis on a Shoestring Budget"
+paper_abstract: >- # this means to ignore newlines until "paper author:"
+  In this paper, we present Msanii, a novel diffusion-based model for synthesizing
+  long-context, high-fidelity music efficiently. Our model combines the expressiveness
+  of mel spectrograms, the generative capabilities of diffusion models, and the vocoding
+  capabilities of neural vocoders. We demonstrate the effectiveness of Msanii by synthesizing
+  tens of seconds (_190 seconds_) of _stereo_ music at high sample rates (_44.1 kHz_)
+  without the use of concatenative synthesis, cascading architectures, or compression techniques.
+  To the best of our knowledge, this is the first work to successfully employ a diffusion-based model
+  for synthesizing such long music samples at high sample rates. Our code and demo can be found [here](https://github.com/Kinyugo/msanii)
+paper_author: "Kinyugo Maina"
+paper_author_affiliation: "Independent Researcher"
+paper_author_email: "kinyugomaina@gmail.com"
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 # Exclude from processing.
